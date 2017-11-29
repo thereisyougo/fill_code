@@ -1,4 +1,4 @@
-setTimeout( completed , 0)
+setTimeout( completed , 100)
 
 var log = (function() {
 	var counter = 0;
@@ -11,13 +11,14 @@ var log = (function() {
 })();
 
 function completed() {
-
 	setTimeout(function() {
 		if (!document.forms.length)
 			return;
 		if (location.href.includes('portal.nuns'))
 			hflogin();
-		else if (location.href.includes('sunyard'))
+		else if (location.href.includes('mail.sunyard'))
+			setTimeout(ydmlogin, 200);
+		else if (location.href.includes('oa.sunyard'))
 			ydlogin();
 		else if (location.href.includes(':9002'))
 			wllogin();
@@ -69,6 +70,15 @@ function ydlogin() {
 		}
 	}
 	document.forms[0]['login.VerifyCode'].addEventListener('keyup', subform);
+}
+
+function ydmlogin() {
+	//document.body.innerHTML += '<input type="text" value="' + (typeof document.forms[0]) + '">';
+	if (!document.forms[0].qquin) return;
+	document.forms[0].qquin.value = 'xiaom.liu';
+	document.forms[0].pp.value = 'Ghost119';
+	document.forms[0].ss.checked = true;
+
 }
 
 function wllogin() {
