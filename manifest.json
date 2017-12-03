@@ -5,7 +5,7 @@
   "description": "",
   "content_scripts": [
     {
-      "matches": ["*://portal.nuns.hf/*", "*://bugfree.hfbank.com.cn/*", "*://oa.sunyard.com.cn:*/*", "*://mail.sunyard.com:*/*", "*://10.3.120.72:*/*", "*://10.3.120.68:*/*"],
+      "matches": ["*://portal.nuns.hf/*", "*://www.shenzhentong.com/*", "*://bugfree.hfbank.com.cn/*", "*://oa.sunyard.com.cn:*/*", "*://mail.sunyard.com:*/*", "*://10.3.120.72:*/*", "*://10.3.120.68:*/*"],
       "js": ["js/content.js"]
     }
   ],

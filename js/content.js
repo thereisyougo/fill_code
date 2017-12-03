@@ -12,6 +12,8 @@ var log = (function() {
 
 function completed() {
 	setTimeout(function() {
+		if (location.href.includes('shenzhentong'))
+			setTimeout(fillcardnum, 0);
 		if (!document.forms.length)
 			return;
 		if (location.href.includes('portal.nuns'))
@@ -30,6 +32,36 @@ function completed() {
 			hfmail();
 	}, 600);
 }
+
+function val(idSelector, value) {
+	if (typeof idSelector === 'string')
+		document.querySelector(idSelector).value = value;
+	if (typeof idSelector === 'object' && idSelector['nodeType'] === Node.ELEMENT_NODE)
+		idSelector.value = value;
+}
+
+function $(idSelector) {
+	return document.querySelector(idSelector);
+}
+
+function fillcardnum() {
+	let cardnum = $('#card_num');
+	if (cardnum) {
+		cardnum.value = '296228930';
+	}
+	let firmfpmc = $('#firmfpmc');
+	if (firmfpmc) {
+		val(firmfpmc, '信雅达系统工程股份有限公司');
+		val('#firmsbh', '91330000253917765N');
+		val('#firmaddre', '杭州江南大道3888号信雅达科技大厦');
+		val('#firmtel', '057156686888');
+		val('#firmyh', '工行浙江省分行营业厅');
+		val('#firmyhzh', '1202021109006707624');
+		val('#firmphone', '18657123531');
+	}
+}
+
+
 
 function hflogin() {
 	if (document.forms[0].userId) {
