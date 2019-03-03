@@ -26,6 +26,8 @@ function completed() {
 			wllogin();
 		else if (location.href.includes('bugfree'))
 			buglogin();
+		else if (location.href.includes('china-pub'))
+			publogin();
 	}, 600);
 	setTimeout(function() {
 		if (location.href.includes('portal.nuns'))
@@ -128,3 +130,12 @@ function buglogin() {
 	document.getElementById('btn').click();
 }
 
+function publogin() {
+	if (!document.forms[0].zh1) return;
+	document.forms[0].elements[0].value = 'thereisyougo';
+	document.forms[0].elements[1].value = 'liuxm119';
+	document.forms[0].elements[2].checked = true;
+	setTimeout(function() {
+		document.querySelector('input[type=image]').click();
+	}, 1000);
+}
