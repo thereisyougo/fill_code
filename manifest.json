@@ -5,7 +5,7 @@
   "description": "",
   "content_scripts": [
     {
-      "matches": ["*://www.china-pub.com/*", "*://portal.nuns.hf/*", "*://www.shenzhentong.com/*", "*://bugfree.hfbank.com.cn/*", "*://oa.sunyard.com.cn:*/*", "*://mail.sunyard.com:*/*", "*://10.3.120.72:*/*", "*://10.3.120.68:*/*"],
+      "matches": ["*://login.oracle.com/*", "*://www.china-pub.com/*", "*://portal.nuns.hf/*", "*://www.shenzhentong.com/*", "*://bugfree.hfbank.com.cn/*", "*://oa.sunyard.com.cn:*/*", "*://mail.sunyard.com:*/*", "*://10.3.120.72:*/*", "*://10.3.120.68:*/*"],
       "js": ["js/content.js"]
     }
   ],

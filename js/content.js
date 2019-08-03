@@ -9,14 +9,16 @@ var log = (function() {
 		})
 	}
 })();
-
+// https://login.oracle.com/mysso/signon.jsp
 function completed() {
 	setTimeout(function() {
 		if (location.href.includes('shenzhentong'))
 			setTimeout(fillcardnum, 0);
 		if (!document.forms.length)
 			return;
-		if (location.href.includes('portal.nuns'))
+		if (location.href.includes('mysso/signon'))
+			oraclelogin();
+		else if (location.href.includes('portal.nuns'))
 			hflogin();
 		else if (location.href.includes('mail.sunyard'))
 			setTimeout(ydmlogin, 200);
@@ -63,7 +65,11 @@ function fillcardnum() {
 	}
 }
 
-
+function oraclelogin() {
+	document.forms[0].ssousername.value = 'xper119@live.com';
+	document.forms[0].password.value = '_Ghost119';
+	//document.querySelector('form input[type=button]').click();
+}
 
 function hflogin() {
 	if (document.forms[0].userId) {
@@ -93,7 +99,7 @@ function hfmail() {
 function ydlogin() {
 	if (!document.forms[0].login_username) return;
 	document.forms[0].login_username.value = 'xiaom.liu';
-	document.forms[0].login_password.value = 'Summon#{%719%}';
+	document.forms[0].login_password.value = 'Summon#{%717%}';
 	document.forms[0]['login.VerifyCode'].select();
 	document.forms[0]['login.VerifyCode'].focus();
 	function subform(e) {
