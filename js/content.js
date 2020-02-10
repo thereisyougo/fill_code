@@ -1,3 +1,5 @@
+// QQ, Blizzard, JetBrains
+// DogDog
 setTimeout( completed , 100)
 
 var log = (function() {
