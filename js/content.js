@@ -1,5 +1,6 @@
 // QQ, Blizzard, JetBrains
 // DogDog
+// EasyConnect ngKL}bD"`<s25(G,
 setTimeout( completed , 100)
 
 var log = (function() {
