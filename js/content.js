@@ -1,6 +1,7 @@
 // QQ, Blizzard, JetBrains
 // DogDog
 // EasyConnect ngKL}bD"`<s25(G,
+// Firm VPN Xt@600571
 setTimeout( completed , 100)
 
 var log = (function() {
@@ -62,7 +63,7 @@ function fillcardnum() {
 		val('#firmsbh', '91330000253917765N');
 		val('#firmaddre', '杭州江南大道3888号信雅达科技大厦');
 		val('#firmtel', '057156686888');
-		val('#firmyh', '工行浙江省分行营业厅');
+		val('#firmyh', '工行杭州分行营业厅');
 		val('#firmyhzh', '1202021109006707624');
 		val('#firmphone', '18657123531');
 	}
