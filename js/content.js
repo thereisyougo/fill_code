@@ -1,12 +1,11 @@
 // QQ, Blizzard, JetBrains
 // DogDog
-// EasyConnect ngKL}bD"`<s25(G,
+// EasyConnect *FMV#uT%Qee8kSgg
 // Firm VPN Xt@600571
 // Epic Time#109
 setTimeout( completed , 100)
 
 var log = (function() {
-	var counter = 0;
 	
 	return function(msg) {
 		Notification.requestPermission(function(permit) {

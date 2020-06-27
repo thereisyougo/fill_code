@@ -1,2 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+        }
+        #wrapper {
+            background-color: antiquewhite;
+            position: fixed;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            width: 200px;
+        }
+        #spliter {
+            position: absolute;
+            width: 3px;
+            background-color: blue;
+            bottom: 0;
+            top: 0;
+            right: -3px;
+            cursor: ew-resize;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="spliter"></div>
+    </div>
+</body>
 </html>
+<script>
+    let spliter = document.querySelector('#spliter')
+    function move(evt0) {
+        // console.info(evt0.pageX);
+        spliter.parentNode.style.width = evt0.pageX + 'px';
+        // console.info(s.parentNode.style.width);
+    }
+    spliter.addEventListener('mousedown', function(evt) {
+        let s = evt.target;
+        // console.info(1);
+        window.addEventListener('mousemove', move);
+        
+    });
+
+    window.addEventListener('mouseup', function() {
+        // console.info(3);
+        window.removeEventListener('mousemove', move);
+    })
+</script>
