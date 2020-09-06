@@ -1,8 +1,8 @@
 // QQ, Blizzard, JetBrains
 // DogDog
-// EasyConnect *FMV#uT%Qee8kSgg
+// EasyConnect ELZ@qGa8Vm^b
 // Firm VPN Xt@600571
-// Epic Time#109
+// Epic *FMV#uT%Qe78D0&
 setTimeout( completed , 100)
 
 var log = (function() {
