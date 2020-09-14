@@ -103,7 +103,7 @@ function hfmail() {
 function ydlogin() {
 	if (!document.forms[0].login_username) return;
 	document.forms[0].login_username.value = 'xiaom.liu';
-	document.forms[0].login_password.value = 'Summon#{%723%}';
+	document.forms[0].login_password.value = 'Summon#{%724%}';
 	document.forms[0]['login.VerifyCode'].select();
 	document.forms[0]['login.VerifyCode'].focus();
 	function subform(e) {
