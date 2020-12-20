@@ -1,6 +1,6 @@
 // QQ, Blizzard, JetBrains
 // DogDog
-// EasyConnect ELZ@qGa7Vm^b
+// EasyConnect ELZ#qGa7Vm^b
 // Firm VPN Xt@600571
 // Epic *FMV#uT%Qe78D0&
 setTimeout( completed , 100)
@@ -65,7 +65,7 @@ function fillcardnum() {
 		val('#firmtel', '057156686888');
 		val('#firmyh', '工行杭州分行营业厅');
 		val('#firmyhzh', '1202021109006707624');
-		val('#firmphone', '18657123531');
+		val('#firmphone', '');
 	}
 }
 
